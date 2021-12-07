@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace ReservProgram
 {
     public partial class MainForm : MetroForm
-    {
+    {        
         public MainForm()
         {
             InitializeComponent();
@@ -56,7 +56,7 @@ namespace ReservProgram
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -66,9 +66,25 @@ namespace ReservProgram
             {               
                 e.Cancel = true;
                 this.Visible = false;
-                this.ShowInTaskbar = false;
+                this.ShowInTaskbar = false;                
+
             }
         }
+
+        private void BtnReserve_Click(object sender, EventArgs e)
+        {
+            Reserve reserve = new Reserve();
+            reserve.ShowDialog();            
+        }
+
+        private void BtnSetting_Click(object sender, EventArgs e)
+        {
+            Setting setting = new Setting();
+            setting.Show();             
+        }
+
+        // 컨트롤 창에서 최소화 버튼 클릭 -> 작업표시줄에는 아이콘이 남아있고 트레이 아이콘 유지
+        // -> 트레이 아이콘 show 버튼 클릭 -> 컨트롤 버튼 미작동        
 
         /*this.Hide();
         e.Cancel = true;*/

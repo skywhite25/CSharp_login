@@ -5,7 +5,6 @@ C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\MetroFramework.dll
 C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\MetroFramework.Fonts.dll
 C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\Interop.LGUBASEOPENAPILib.dll
 C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\AxInterop.LGUBASEOPENAPILib.dll
-C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.csproj.AssemblyReference.cache
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\Interop.LGUBASEOPENAPILib.dll
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\AxInterop.LGUBASEOPENAPILib.dll
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.csproj.ResolveComReference.cache

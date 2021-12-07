@@ -23,12 +23,12 @@ namespace ReservProgram
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void strLoginPW_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void strLoginPW_TextChanged(object sender, EventArgs e)
+        private void strLoginID_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -49,9 +49,6 @@ namespace ReservProgram
 
         }
 
-        private void strLoginPW_TextChanged_1(object sender, EventArgs e)
-        {
 
-        }
     }
 }

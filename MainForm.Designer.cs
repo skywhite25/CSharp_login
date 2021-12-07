@@ -32,29 +32,31 @@ namespace ReservProgram
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.trayIcon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.trayMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hideToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.Menu.SuspendLayout();
+            this.btnReserve = new MetroFramework.Controls.MetroButton();
+            this.btnSetting = new MetroFramework.Controls.MetroButton();
+            this.trayMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // trayIcon
             // 
-            this.trayIcon.ContextMenuStrip = this.Menu;
+            this.trayIcon.ContextMenuStrip = this.trayMenu;
             this.trayIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("trayIcon.Icon")));
             this.trayIcon.Visible = true;
             this.trayIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Icon_MouseDoubleClick_1);
             // 
-            // Menu
+            // trayMenu
             // 
-            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.trayMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showToolStripMenuItem1,
             this.hideToolStripMenuItem1,
             this.exitToolStripMenuItem1});
-            this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(105, 70);
-            this.Menu.Opening += new System.ComponentModel.CancelEventHandler(this.Menu_Opening_1);
+            this.trayMenu.Name = "Menu";
+            this.trayMenu.Size = new System.Drawing.Size(105, 70);
+            this.trayMenu.Opening += new System.ComponentModel.CancelEventHandler(this.Menu_Opening_1);
             // 
             // showToolStripMenuItem1
             // 
@@ -77,14 +79,34 @@ namespace ReservProgram
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
+            // btnReserve
+            // 
+            this.btnReserve.Location = new System.Drawing.Point(896, 490);
+            this.btnReserve.Name = "btnReserve";
+            this.btnReserve.Size = new System.Drawing.Size(75, 23);
+            this.btnReserve.TabIndex = 1;
+            this.btnReserve.Text = "예약";
+            this.btnReserve.Click += new System.EventHandler(this.BtnReserve_Click);
+            // 
+            // btnSetting
+            // 
+            this.btnSetting.Location = new System.Drawing.Point(896, 519);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(75, 23);
+            this.btnSetting.TabIndex = 2;
+            this.btnSetting.Text = "설정";
+            this.btnSetting.Click += new System.EventHandler(this.BtnSetting_Click);
+            // 
             // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(1021, 592);
+            this.Controls.Add(this.btnSetting);
+            this.Controls.Add(this.btnReserve);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.Menu.ResumeLayout(false);
+            this.trayMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -92,9 +114,11 @@ namespace ReservProgram
         #endregion
 
         private System.Windows.Forms.NotifyIcon trayIcon;
-        private System.Windows.Forms.ContextMenuStrip Menu;
+        private System.Windows.Forms.ContextMenuStrip trayMenu;
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem hideToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private MetroFramework.Controls.MetroButton btnReserve;
+        private MetroFramework.Controls.MetroButton btnSetting;
     }
 }

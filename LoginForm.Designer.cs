@@ -48,7 +48,7 @@ namespace ReservProgram
             this.strLoginID.Name = "strLoginID";
             this.strLoginID.Size = new System.Drawing.Size(100, 18);
             this.strLoginID.TabIndex = 1;
-            this.strLoginID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.strLoginID.TextChanged += new System.EventHandler(this.strLoginID_TextChanged);
             // 
             // panel1
             // 
@@ -68,9 +68,11 @@ namespace ReservProgram
             // 
             // btnLogin
             // 
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Location = new System.Drawing.Point(179, 314);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(41, 26);
+            this.btnLogin.Style = MetroFramework.MetroColorStyle.Silver;
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "로그인";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -103,10 +105,11 @@ namespace ReservProgram
             this.strLoginPW.PasswordChar = '*';
             this.strLoginPW.Size = new System.Drawing.Size(100, 18);
             this.strLoginPW.TabIndex = 2;
-            this.strLoginPW.TextChanged += new System.EventHandler(this.strLoginPW_TextChanged_1);
+            this.strLoginPW.TextChanged += new System.EventHandler(this.strLoginPW_TextChanged);
             // 
             // LoginForm
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(291, 450);
@@ -127,12 +130,12 @@ namespace ReservProgram
 
         #endregion
         private System.Windows.Forms.TextBox strLoginID;
+        private System.Windows.Forms.TextBox strLoginPW;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private MetroFramework.Controls.MetroButton btnLogin;
         private MetroFramework.Controls.MetroLabel Label;
         private MetroFramework.Controls.MetroLabel Label2;
-        private System.Windows.Forms.TextBox strLoginPW;
     }
 }
 
