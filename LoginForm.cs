@@ -43,6 +43,8 @@ namespace ReservProgram
         } else {
                 MessageBox.Show("로그인 실패");
                 this.Visible = true;
+                strLoginID.Clear();
+                strLoginPW.Clear();
             }
 
         }

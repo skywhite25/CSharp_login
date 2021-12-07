@@ -33,12 +33,10 @@ namespace ReservProgram
             this.strLoginID = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLogin = new MetroFramework.Controls.MetroButton();
             this.Label = new MetroFramework.Controls.MetroLabel();
             this.Label2 = new MetroFramework.Controls.MetroLabel();
             this.strLoginPW = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // strLoginID
@@ -49,7 +47,7 @@ namespace ReservProgram
             this.strLoginID.Location = new System.Drawing.Point(121, 227);
             this.strLoginID.Name = "strLoginID";
             this.strLoginID.Size = new System.Drawing.Size(100, 18);
-            this.strLoginID.TabIndex = 3;
+            this.strLoginID.TabIndex = 1;
             this.strLoginID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel1
@@ -58,7 +56,7 @@ namespace ReservProgram
             this.panel1.Location = new System.Drawing.Point(121, 246);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(100, 1);
-            this.panel1.TabIndex = 5;
+            this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -66,23 +64,14 @@ namespace ReservProgram
             this.panel2.Location = new System.Drawing.Point(121, 296);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(100, 1);
-            this.panel2.TabIndex = 6;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(209, 59);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.panel2.TabIndex = 0;
             // 
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(179, 314);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(41, 26);
-            this.btnLogin.TabIndex = 8;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "로그인";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -92,7 +81,7 @@ namespace ReservProgram
             this.Label.Location = new System.Drawing.Point(43, 230);
             this.Label.Name = "Label";
             this.Label.Size = new System.Drawing.Size(51, 19);
-            this.Label.TabIndex = 9;
+            this.Label.TabIndex = 0;
             this.Label.Text = "아이디";
             // 
             // Label2
@@ -101,7 +90,7 @@ namespace ReservProgram
             this.Label2.Location = new System.Drawing.Point(43, 280);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(65, 19);
-            this.Label2.TabIndex = 10;
+            this.Label2.TabIndex = 0;
             this.Label2.Text = "패스워드";
             // 
             // strLoginPW
@@ -113,7 +102,7 @@ namespace ReservProgram
             this.strLoginPW.Name = "strLoginPW";
             this.strLoginPW.PasswordChar = '*';
             this.strLoginPW.Size = new System.Drawing.Size(100, 18);
-            this.strLoginPW.TabIndex = 11;
+            this.strLoginPW.TabIndex = 2;
             this.strLoginPW.TextChanged += new System.EventHandler(this.strLoginPW_TextChanged_1);
             // 
             // LoginForm
@@ -125,14 +114,12 @@ namespace ReservProgram
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.Label);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.strLoginID);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.Load += new System.EventHandler(this.LoginForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,7 +129,6 @@ namespace ReservProgram
         private System.Windows.Forms.TextBox strLoginID;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroButton btnLogin;
         private MetroFramework.Controls.MetroLabel Label;
         private MetroFramework.Controls.MetroLabel Label2;

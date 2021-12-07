@@ -31,7 +31,7 @@ namespace ReservProgram
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.Icon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.trayIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.hideToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,12 +39,12 @@ namespace ReservProgram
             this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Icon
+            // trayIcon
             // 
-            this.Icon.ContextMenuStrip = this.Menu;
-            this.Icon.Icon = ((System.Drawing.Icon)(resources.GetObject("Icon.Icon")));
-            this.Icon.Visible = true;
-            this.Icon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Icon_MouseDoubleClick_1);
+            this.trayIcon.ContextMenuStrip = this.Menu;
+            this.trayIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("trayIcon.Icon")));
+            this.trayIcon.Visible = true;
+            this.trayIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Icon_MouseDoubleClick_1);
             // 
             // Menu
             // 
@@ -80,8 +80,9 @@ namespace ReservProgram
             // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(1021, 592);
-            
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Menu.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -90,7 +91,7 @@ namespace ReservProgram
 
         #endregion
 
-        private System.Windows.Forms.NotifyIcon Icon;
+        private System.Windows.Forms.NotifyIcon trayIcon;
         private System.Windows.Forms.ContextMenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem hideToolStripMenuItem1;
