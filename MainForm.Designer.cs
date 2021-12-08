@@ -99,10 +99,11 @@ namespace ReservProgram
             // 
             // MainForm
             // 
-            this.ClientSize = new System.Drawing.Size(1021, 592);
+            this.ClientSize = new System.Drawing.Size(1343, 823);
             this.Controls.Add(this.btnSetting);
             this.Controls.Add(this.btnReserve);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.ShadowType = MetroFramework.Forms.MetroForm.MetroFormShadowType.None;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);

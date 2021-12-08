@@ -167,14 +167,14 @@ namespace ReservProgram
                     this.ShowInTaskbar = true;
                     this.Visible = true;
                     this.Show();
-                    this.WindowState = FormWindowState.Normal;
+                    /*this.WindowState = FormWindowState.Normal;*/
                 }
                 else
                 {
                     this.ShowInTaskbar = true;
                     this.Visible = true;
                     this.Show();
-                    this.WindowState = FormWindowState.Normal;
+                    /*this.WindowState = FormWindowState.Normal;*/
                 }
                 Console.WriteLine(this.Visible);
                 Console.WriteLine("this.ShowInTaskbar : " + this.ShowInTaskbar + " this.Visible : " + this.Visible + " this.WindowState : " + this.WindowState);
