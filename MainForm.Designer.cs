@@ -104,6 +104,7 @@ namespace ReservProgram
             this.Controls.Add(this.btnReserve);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.ShadowType = MetroFramework.Forms.MetroForm.MetroFormShadowType.None;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.trayMenu.ResumeLayout(false);
