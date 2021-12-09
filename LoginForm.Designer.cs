@@ -122,6 +122,7 @@ namespace ReservProgram
             this.Controls.Add(this.strLoginID);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
+            this.Resizable = false;
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

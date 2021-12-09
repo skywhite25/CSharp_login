@@ -16,3 +16,4 @@ C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.exe
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.pdb
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.LoginForm.resources
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.MainForm.resources
+C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.csproj.AssemblyReference.cache

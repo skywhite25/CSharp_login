@@ -81,6 +81,7 @@ namespace ReservProgram
             // 
             // btnReserve
             // 
+            this.btnReserve.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReserve.Location = new System.Drawing.Point(896, 490);
             this.btnReserve.Name = "btnReserve";
             this.btnReserve.Size = new System.Drawing.Size(75, 23);
@@ -90,6 +91,7 @@ namespace ReservProgram
             // 
             // btnSetting
             // 
+            this.btnSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSetting.Location = new System.Drawing.Point(896, 519);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(75, 23);
@@ -99,18 +101,25 @@ namespace ReservProgram
             // 
             // MainForm
             // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(1343, 823);
             this.Controls.Add(this.btnSetting);
             this.Controls.Add(this.btnReserve);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.ShadowType = MetroFramework.Forms.MetroForm.MetroFormShadowType.None;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            /*this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);*/
+            /*this.Resize += new System.EventHandler(this.MainForm_Resize);*/
             this.trayMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-
+            //
+            // MaximizeBox
+            //
+            /*this.MaximizeBox.Click += new System.EventHandler(this.MaximizeBox_Click);*/
+                
         }
 
         #endregion
