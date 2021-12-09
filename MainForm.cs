@@ -8,37 +8,50 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace ReservProgram
 {
     public partial class MainForm : MetroForm
     {
+        String _Server = "localhost";
+        int _port = 3306;
+        string _db = "qrid_test";
+        string _id = "root";
+        string _pw = "aa135719";
+        string _connectionAddress = "";
+
         public MainForm()
         {
             InitializeComponent();
             Console.WriteLine(trayIcon.Visible);
 
+            if (FormWindowState.Minimized == this.WindowState)
+            {
+
+            }
+            else
+            {
+                this.Visible = false;
+            }
+            this.Show();
+            /*windowTray("show");*/
+            this.ShowInTaskbar = true;
+            this.Visible = true;
+            this.WindowState = FormWindowState.Normal;
+            Console.WriteLine("this.ShowInTaskbar : " + this.ShowInTaskbar + " this.Visible : " + this.Visible + " this.WindowState : " + this.WindowState);
+
         }
+
+
 
         private void showToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Visible = true;
             this.ShowInTaskbar = true;
             this.WindowState = FormWindowState.Normal;
-            /*if (FormWindowState.Minimized == this.WindowState)
-            {
-                
-            } 
-            else
-            {
-                this.Visible = false;
-            }*/
-            /*this.Show();*/
-            /*windowTray("show");*/
-            /*this.ShowInTaskbar = true;
-            this.Visible = true;
-            this.WindowState = FormWindowState.Normal;*/
-            /*            Console.WriteLine("this.ShowInTaskbar : " + this.ShowInTaskbar + " this.Visible : " + this.Visible + " this.WindowState : " + this.WindowState);*/
+
             Console.WriteLine("트레이 show버튼");
 
 
@@ -93,7 +106,8 @@ namespace ReservProgram
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Console.WriteLine("메인폼 로드");
+            Console.WriteLine("메인폼 로드");            
+
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)

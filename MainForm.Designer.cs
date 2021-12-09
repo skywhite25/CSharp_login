@@ -111,15 +111,9 @@ namespace ReservProgram
             this.Name = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
-            /*this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseClick);*/
-            /*this.Resize += new System.EventHandler(this.MainForm_Resize);*/
             this.trayMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-            //
-            // MaximizeBox
-            //
-            /*this.MaximizeBox.Click += new System.EventHandler(this.MaximizeBox_Click);*/
-                
+
         }
 
         #endregion
