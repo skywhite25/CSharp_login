@@ -41,19 +41,19 @@ namespace ReservProgram
             // clear container
             dayContainer.Controls.Clear();
 
-            // 달 감소
-            /*            if (month <= 12)
-                        {
-                            month--;
-                        }
-                        else if(month == 1)
-                        {
+            if (month != 1)
+            {
+                month--;
+            }
+            else
+            {
+                month = 12;
+                year--;
+            }
 
-                            year--;
-                        }*/
-            month--;
+            /*month--;*/
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthName + " " + year;
+            LBDATE.Text = year + " " + monthName;
 
             // 달의 첫째 날
             DateTime startOfTheMonth = new DateTime(year, month, 1);
@@ -80,20 +80,20 @@ namespace ReservProgram
             // clear container
             dayContainer.Controls.Clear();
 
-            /*            if (month <= 12)
-                        {
-                            month++;
-                        }
-                        *//*else
-                        {
-                            month++;
-                            year++;
-                        }*/
-            month++;
+            if (month != 12)
+            {
+                month++;
+            }
+            else
+            {
+                month = 1;
+                year++;
+            }
+            
             // 달 증가
 
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthName + " " + year;
+            LBDATE.Text = year + " " + monthName;
 
             // 달의 첫째 날
             DateTime startOfTheMonth = new DateTime(year, month, 1);
@@ -121,7 +121,7 @@ namespace ReservProgram
             year = now.Year;
 
             String monthName = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-            LBDATE.Text = monthName +  " " + year;
+            LBDATE.Text = year + " " + monthName;
             // 달의 첫째 날
 
             DateTime startOfTheMonth = new DateTime(year, month, 1);

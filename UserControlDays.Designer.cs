@@ -35,6 +35,7 @@ namespace ReservProgram
             // lbdays
             // 
             this.lbdays.AutoSize = true;
+            this.lbdays.ForeColor = System.Drawing.Color.Transparent;
             this.lbdays.Location = new System.Drawing.Point(3, 12);
             this.lbdays.Name = "lbdays";
             this.lbdays.Size = new System.Drawing.Size(23, 19);
@@ -45,7 +46,7 @@ namespace ReservProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.Controls.Add(this.lbdays);
             this.Name = "UserControlDays";
             this.Size = new System.Drawing.Size(132, 91);

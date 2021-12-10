@@ -40,6 +40,7 @@ namespace ReservProgram
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
             this.LBDATE = new MetroFramework.Controls.MetroLabel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dayContainer
@@ -70,6 +71,7 @@ namespace ReservProgram
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
+            this.metroLabel1.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel1.Location = new System.Drawing.Point(54, 54);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(51, 19);
@@ -80,6 +82,7 @@ namespace ReservProgram
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
+            this.metroLabel2.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel2.Location = new System.Drawing.Point(188, 54);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(57, 19);
@@ -90,6 +93,7 @@ namespace ReservProgram
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
+            this.metroLabel3.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel3.Location = new System.Drawing.Point(463, 54);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(76, 19);
@@ -99,6 +103,7 @@ namespace ReservProgram
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
+            this.metroLabel4.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel4.Location = new System.Drawing.Point(327, 54);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(54, 19);
@@ -108,6 +113,7 @@ namespace ReservProgram
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
+            this.metroLabel5.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel5.Location = new System.Drawing.Point(753, 54);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(45, 19);
@@ -117,6 +123,7 @@ namespace ReservProgram
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
+            this.metroLabel6.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel6.Location = new System.Drawing.Point(616, 54);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(61, 19);
@@ -126,6 +133,7 @@ namespace ReservProgram
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
+            this.metroLabel7.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel7.Location = new System.Drawing.Point(874, 54);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(60, 19);
@@ -134,6 +142,7 @@ namespace ReservProgram
             // 
             // LBDATE
             // 
+            this.LBDATE.BackColor = System.Drawing.Color.Transparent;
             this.LBDATE.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.LBDATE.Location = new System.Drawing.Point(327, 9);
             this.LBDATE.Name = "LBDATE";
@@ -142,11 +151,22 @@ namespace ReservProgram
             this.LBDATE.Text = "YEAR MONTH";
             this.LBDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(54, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 12);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "label1";
+            // 
             // Setting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(996, 777);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LBDATE);
             this.Controls.Add(this.metroLabel7);
             this.Controls.Add(this.metroLabel5);
@@ -181,5 +201,6 @@ namespace ReservProgram
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private MetroFramework.Controls.MetroLabel metroLabel7;
         private MetroFramework.Controls.MetroLabel LBDATE;
+        private System.Windows.Forms.Label label1;
     }
 }
