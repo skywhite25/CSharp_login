@@ -15,32 +15,36 @@ namespace ReservProgram
 {
     public partial class MainForm : MetroForm
     {
-        String _Server = "localhost";
+/*        String _Server = "localhost";
         int _port = 3306;
         string _db = "qrid_test";
         string _id = "root";
         string _pw = "aa135719";
-        string _connectionAddress = "";
+        string _connectionAddress = "";*/
 
         public MainForm()
         {
             InitializeComponent();
             Console.WriteLine(trayIcon.Visible);
-
-            if (FormWindowState.Minimized == this.WindowState)
+/*
+            _connectionAddress = string.Format("Server={0},port={1},db={2},id={3},pw={4}", _Server, _port, _db, _id, _pw);*/
+/*            string connStr = string.Format(@"server=localhost;
+                                        id=test;
+                                        pw=zbflem2021@@;
+                                        db=qrid");
+            MySqlConnection con = new MySqlConnection(connStr);
+            try
             {
-
+                con.Open();
+                MessageBox.Show("연결 성공");
             }
-            else
+            catch
             {
-                this.Visible = false;
-            }
-            this.Show();
-            /*windowTray("show");*/
-            this.ShowInTaskbar = true;
-            this.Visible = true;
-            this.WindowState = FormWindowState.Normal;
-            Console.WriteLine("this.ShowInTaskbar : " + this.ShowInTaskbar + " this.Visible : " + this.Visible + " this.WindowState : " + this.WindowState);
+                con.Close();
+                MessageBox.Show("연결 실패");
+                Application.OpenForms["MainForm"].Close();
+            }*/
+
 
         }
 
@@ -48,6 +52,7 @@ namespace ReservProgram
 
         private void showToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            // 보이는 거 this.Show(); 로만 설정해놓으면 hide/show가 역할이 같아지는거 같다.
             this.Visible = true;
             this.ShowInTaskbar = true;
             this.WindowState = FormWindowState.Normal;
@@ -79,8 +84,8 @@ namespace ReservProgram
 
 
         private void Icon_MouseDoubleClick_1(object sender, MouseEventArgs e)
-
-        // 잘됨
+        // 보이는 거 this.Show(); 로만 설정해놓으면 hide/show가 역할이 같아지는거 같다.
+        // 잘됨 -> 왜 잘되는지는 모름
         {
 
             /*this.Show();*/
@@ -159,6 +164,9 @@ namespace ReservProgram
             Setting setting = new Setting();
             setting.Show();
         }
+
+
+
 
 
         // 컨트롤 창에서 최소화 버튼 클릭 -> 작업표시줄에는 아이콘이 남아있고 트레이 아이콘 유지

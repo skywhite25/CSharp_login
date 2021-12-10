@@ -38,7 +38,10 @@ namespace ReservProgram
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReserve = new MetroFramework.Controls.MetroButton();
             this.btnSetting = new MetroFramework.Controls.MetroButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.trayMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // trayIcon
@@ -82,9 +85,9 @@ namespace ReservProgram
             // btnReserve
             // 
             this.btnReserve.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReserve.Location = new System.Drawing.Point(896, 490);
+            this.btnReserve.Location = new System.Drawing.Point(1185, 36);
             this.btnReserve.Name = "btnReserve";
-            this.btnReserve.Size = new System.Drawing.Size(75, 23);
+            this.btnReserve.Size = new System.Drawing.Size(75, 25);
             this.btnReserve.TabIndex = 1;
             this.btnReserve.Text = "예약";
             this.btnReserve.Click += new System.EventHandler(this.BtnReserve_Click);
@@ -92,12 +95,22 @@ namespace ReservProgram
             // btnSetting
             // 
             this.btnSetting.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSetting.Location = new System.Drawing.Point(896, 519);
+            this.btnSetting.Location = new System.Drawing.Point(1185, 67);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Size = new System.Drawing.Size(75, 23);
             this.btnSetting.TabIndex = 2;
             this.btnSetting.Text = "설정";
             this.btnSetting.Click += new System.EventHandler(this.BtnSetting_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(448, 162);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 3;
             // 
             // MainForm
             // 
@@ -105,6 +118,7 @@ namespace ReservProgram
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(1343, 823);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.btnSetting);
             this.Controls.Add(this.btnReserve);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -112,6 +126,7 @@ namespace ReservProgram
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.trayMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -125,5 +140,7 @@ namespace ReservProgram
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
         private MetroFramework.Controls.MetroButton btnReserve;
         private MetroFramework.Controls.MetroButton btnSetting;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }

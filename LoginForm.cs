@@ -18,22 +18,7 @@ namespace ReservProgram
         public LoginForm()
         {
             InitializeComponent();
-/*            string connStr = string.Format(@"server=localhost;
-                                        id=test;
-                                        pw=zbflem2021@@;
-                                        db=qrid");
-            MySqlConnection con = new MySqlConnection(connStr);
-            try
-            {
-                con.Open();
-                MessageBox.Show("연결 성공");
-            }
-            catch
-            {
-                con.Close();
-                MessageBox.Show("연결 실패");
-                Application.OpenForms["MainForm"].Close();
-            }*/
+
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
