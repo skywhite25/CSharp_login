@@ -39,7 +39,7 @@ namespace ReservProgram
             // txDate
             // 
             this.txDate.Enabled = false;
-            this.txDate.Location = new System.Drawing.Point(76, 74);
+            this.txDate.Location = new System.Drawing.Point(76, 90);
             this.txDate.Name = "txDate";
             this.txDate.Size = new System.Drawing.Size(312, 21);
             this.txDate.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace ReservProgram
             // txEvent
             // 
             this.txEvent.Enabled = false;
-            this.txEvent.Location = new System.Drawing.Point(76, 127);
+            this.txEvent.Location = new System.Drawing.Point(76, 143);
             this.txEvent.Name = "txEvent";
             this.txEvent.Size = new System.Drawing.Size(312, 21);
             this.txEvent.TabIndex = 1;
@@ -55,7 +55,7 @@ namespace ReservProgram
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 59);
+            this.label1.Location = new System.Drawing.Point(74, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 12);
             this.label1.TabIndex = 2;
@@ -64,7 +64,7 @@ namespace ReservProgram
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(74, 112);
+            this.label2.Location = new System.Drawing.Point(74, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 12);
             this.label2.TabIndex = 3;
@@ -72,7 +72,7 @@ namespace ReservProgram
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(313, 166);
+            this.btnSave.Location = new System.Drawing.Point(313, 182);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 4;

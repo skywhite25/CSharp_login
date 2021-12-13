@@ -25,7 +25,7 @@ namespace ReservProgram
 
         private void EventForm_Load(object sender, EventArgs e)
         {
-            txDate.Text = Setting.static_year +  "/" + Setting.static_month + "/" + UserControlDays.static_day;
+            txDate.Text = Reserve_Calender.static_year +  "/" + Reserve_Calender.static_month + "/" + UserControlDays.static_day;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
