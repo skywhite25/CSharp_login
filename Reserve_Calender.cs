@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace ReservProgram
 {
-    public partial class Setting : MetroForm
+    public partial class Reserve_Calender : MetroForm
     {
         int month;                                               
         int year;
 
         public static int static_month, static_year;
 
-        public Setting()
+        public Reserve_Calender()
         {
             InitializeComponent();
         }
@@ -28,7 +28,6 @@ namespace ReservProgram
         {
             displayDays();
         }
-
 
 
         // btnPrevious

@@ -1,7 +1,7 @@
 ﻿
 namespace ReservProgram
 {
-    partial class Setting
+    partial class Reserve_Calender
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace ReservProgram
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Setting));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reserve_Calender));
             this.dayContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.btnPrevious = new MetroFramework.Controls.MetroButton();
             this.btnNext = new MetroFramework.Controls.MetroButton();
@@ -329,6 +329,7 @@ namespace ReservProgram
             this.Load += new System.EventHandler(this.Setting_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
 
         }
 
