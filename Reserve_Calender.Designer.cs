@@ -54,6 +54,7 @@ namespace ReservProgram
             // dayContainer
             // 
             this.dayContainer.BackColor = System.Drawing.Color.Transparent;
+            this.dayContainer.CausesValidation = false;
             this.dayContainer.Location = new System.Drawing.Point(12, 122);
             this.dayContainer.Name = "dayContainer";
             this.dayContainer.Size = new System.Drawing.Size(972, 639);
@@ -299,7 +300,7 @@ namespace ReservProgram
             this.metroPanel8.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel8.VerticalScrollbarSize = 10;
             // 
-            // Setting
+            // Reserve_Calender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -325,11 +326,10 @@ namespace ReservProgram
             this.Controls.Add(this.dayContainer);
             this.DoubleBuffered = false;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Setting";
+            this.Name = "Reserve_Calender";
             this.Load += new System.EventHandler(this.Setting_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
 
         }
 

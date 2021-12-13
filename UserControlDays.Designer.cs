@@ -55,6 +55,8 @@ namespace ReservProgram
             this.Size = new System.Drawing.Size(132, 91);
             this.Load += new System.EventHandler(this.UserControlDays_Load);
             this.Click += new System.EventHandler(this.UserControlDays_Click);
+            this.MouseLeave += new System.EventHandler(this.UserControlDays_MouseLeave);
+            this.MouseHover += new System.EventHandler(this.UserControlDays_MouseHover);
             this.ResumeLayout(false);
             this.PerformLayout();
 

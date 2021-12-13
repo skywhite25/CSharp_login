@@ -16,5 +16,10 @@ namespace ReservProgram
         {
             InitializeComponent();
         }
+
+        private void UserControlBlank_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

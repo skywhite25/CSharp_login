@@ -38,6 +38,7 @@ namespace ReservProgram
             this.DoubleBuffered = true;
             this.Name = "UserControlBlank";
             this.Size = new System.Drawing.Size(132, 91);
+            this.MouseHover += new System.EventHandler(this.UserControlBlank_MouseHover);
             this.ResumeLayout(false);
 
         }
