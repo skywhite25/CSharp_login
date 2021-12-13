@@ -161,7 +161,7 @@ namespace ReservProgram
 
         private void BtnSetting_Click(object sender, EventArgs e)
         {
-            Setting setting = new Setting();
+            Reserve_Calender setting = new Reserve_Calender();
             setting.Show();
         }
 
