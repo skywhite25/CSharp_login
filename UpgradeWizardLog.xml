@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\TH\vscommunity_workspace\ReservProgram\ReservProgram.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\TH\vscommunity_workspace\ReservProgram\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\TH\vscommunity_workspace\ReservProgram\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\TH\vscommunity_workspace\ReservProgram\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\TH\vscommunity_workspace\ReservProgram\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\TH\vscommunity_workspace\ReservProgram\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\TH\vscommunity_workspace\ReservProgram\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\TH\vscommunity_workspace\ReservProgram\App.config" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm.de.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm.de.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm.es.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm.es.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm.ja.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm.ja.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm.ru.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm.ru.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm1.de.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm1.de.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm1.es.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm1.es.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm1.ja.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm1.ja.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm1.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm1.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm1.ru.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm1.ru.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm2.de.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm2.de.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm2.es.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm2.es.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm2.ja.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm2.ja.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm2.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm2.resx" />
+  <event action="Analyze" type="Success" name="CustomAppointmentForm2.ru.resx" path="C:\TH\vscommunity_workspace\ReservProgram\CustomAppointmentForm2.ru.resx" />
+  <event action="Analyze" type="Success" name="EventForm.resx" path="C:\TH\vscommunity_workspace\ReservProgram\EventForm.resx" />
+  <event action="Analyze" type="Success" name="LoginForm.resx" path="C:\TH\vscommunity_workspace\ReservProgram\LoginForm.resx" />
+  <event action="Analyze" type="Success" name="MainForm.resx" path="C:\TH\vscommunity_workspace\ReservProgram\MainForm.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\TH\vscommunity_workspace\ReservProgram\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\TH\vscommunity_workspace\ReservProgram\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\TH\vscommunity_workspace\ReservProgram\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\TH\vscommunity_workspace\ReservProgram\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\TH\vscommunity_workspace\ReservProgram\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\TH\vscommunity_workspace\ReservProgram\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\TH\vscommunity_workspace\ReservProgram\packages.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\TH\vscommunity_workspace\ReservProgram\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="Reserve.ko-KR.resx" path="C:\TH\vscommunity_workspace\ReservProgram\Reserve.ko-KR.resx" />
+  <event action="Analyze" type="Success" name="Reserve.resx" path="C:\TH\vscommunity_workspace\ReservProgram\Reserve.resx" />
+  <event action="Analyze" type="Success" name="Reserve_Calender.resx" path="C:\TH\vscommunity_workspace\ReservProgram\Reserve_Calender.resx" />
+  <event action="Analyze" type="Success" name="UserControlBlank.resx" path="C:\TH\vscommunity_workspace\ReservProgram\UserControlBlank.resx" />
+  <event action="Analyze" type="Success" name="UserControlDays.resx" path="C:\TH\vscommunity_workspace\ReservProgram\UserControlDays.resx" />
+  <event action="Analyze" type="Success" name="ReservProgram" path="C:\TH\vscommunity_workspace\ReservProgram\ReservProgram.csproj" />
+  <event action="Analyze" type="Success" name="ReservProgram" path="C:\TH\vscommunity_workspace\ReservProgram\ReservProgram.sln" />
+</log>
