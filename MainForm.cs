@@ -165,6 +165,15 @@ namespace ReservProgram
             setting.Show();
         }
 
+        private void radCalendar2_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
 
 
 

@@ -62,7 +62,7 @@ namespace ReservProgram
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(12, 46);
+            this.btnPrevious.Location = new System.Drawing.Point(303, 23);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(75, 23);
             this.btnPrevious.TabIndex = 0;
@@ -71,7 +71,7 @@ namespace ReservProgram
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(909, 46);
+            this.btnNext.Location = new System.Drawing.Point(629, 23);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(75, 23);
             this.btnNext.TabIndex = 1;
@@ -165,9 +165,9 @@ namespace ReservProgram
             this.LBDATE.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.LBDATE.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.LBDATE.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LBDATE.Location = new System.Drawing.Point(327, 9);
+            this.LBDATE.Location = new System.Drawing.Point(384, 14);
             this.LBDATE.Name = "LBDATE";
-            this.LBDATE.Size = new System.Drawing.Size(350, 28);
+            this.LBDATE.Size = new System.Drawing.Size(239, 43);
             this.LBDATE.TabIndex = 9;
             this.LBDATE.Text = "YEAR MONTH";
             this.LBDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -180,7 +180,7 @@ namespace ReservProgram
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(434, 36);
+            this.metroPanel1.Location = new System.Drawing.Point(434, 45);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(135, 1);
             this.metroPanel1.TabIndex = 10;
