@@ -48,8 +48,6 @@ namespace ReservProgram
 
         }
 
-
-
         private void showToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             // 보이는 거 this.Show(); 로만 설정해놓으면 hide/show가 역할이 같아지는거 같다.
@@ -58,10 +56,7 @@ namespace ReservProgram
             this.WindowState = FormWindowState.Normal;
 
             Console.WriteLine("트레이 show버튼");
-
-
         }
-
 
         private void hideToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -82,7 +77,6 @@ namespace ReservProgram
             Application.Exit();
         }
 
-
         private void Icon_MouseDoubleClick_1(object sender, MouseEventArgs e)
         // 보이는 거 this.Show(); 로만 설정해놓으면 hide/show가 역할이 같아지는거 같다.
         // 잘됨 -> 왜 잘되는지는 모름
@@ -96,23 +90,16 @@ namespace ReservProgram
 
             /*Console.WriteLine("this.ShowInTaskbar : " + this.ShowInTaskbar + " this.Visible : " + this.Visible + " this.WindowState : " + this.WindowState);*/
             Console.WriteLine("트레이 더블클릭");
-
-
-
         }
 
         private void Menu_Opening_1(object sender, CancelEventArgs e)
         {
             Console.WriteLine("트레이 메뉴 오픈");
-
-
-
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             Console.WriteLine("메인폼 로드");            
-
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -152,7 +139,6 @@ namespace ReservProgram
                         Console.WriteLine("MainForm_Resize.FormWindowState.Normal");
                     }
                 }*/
-
         private void BtnReserve_Click(object sender, EventArgs e)
         {
             Reserve reserve = new Reserve();
@@ -170,18 +156,33 @@ namespace ReservProgram
 
         }
 
+        private void tabNavigationPage1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
 
+        private void schedulerControl1_Click(object sender, EventArgs e)
+        {
 
+        }
 
+        private void schedulerControl1_EditAppointmentFormShowing(object sender, DevExpress.XtraScheduler.AppointmentFormEventArgs e)
+        {
+            DevExpress.XtraScheduler.SchedulerControl scheduler = ((DevExpress.XtraScheduler.SchedulerControl)(sender));
+            ReservProgram.CustomAppointmentForm form = new ReservProgram.CustomAppointmentForm(scheduler, e.Appointment, e.OpenRecurrenceForm);
+            try
+            {
+                e.DialogResult = form.ShowDialog();
+                e.Handled = true;
+            }
+            finally
+            {
+                form.Dispose();
+            }
 
-
-
-
+        }
         // 컨트롤 창에서 최소화 버튼 클릭 -> 작업표시줄에는 아이콘이 남아있고 트레이 아이콘 유지
         // -> 트레이 아이콘 show 버튼 클릭 -> 컨트롤 버튼 미작동        
-
-
 
         /*this.Hide();
         e.Cancel = true;*/
@@ -209,8 +210,6 @@ namespace ReservProgram
                             this.Show();
                             *//*
     }
-
-
     else
     {
         this.Hide();
