@@ -33,5 +33,15 @@ namespace ReservProgram.Properties {
                 return ((string)(this["SchedulerDataConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=175.123.253.199;user id=qrid;persistsecurityinfo=True;database=qrid")]
+        public string qridConnectionString {
+            get {
+                return ((string)(this["qridConnectionString"]));
+            }
+        }
     }
 }

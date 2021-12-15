@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="qridDataSet" targetNamespace="http://tempuri.org/qridDataSet.xsd" xmlns:mstns="http://tempuri.org/qridDataSet.xsd" xmlns="http://tempuri.org/qridDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="qridConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="qridConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ReservProgram.Properties.Settings.GlobalReference.Default.qridConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="corporationTableAdapter" GeneratorDataComponentClassName="corporationTableAdapter" Name="corporation" UserDataComponentName="corporationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="qridConnectionString (Settings)" DbObjectName="qrid.corporation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `corp_idx`, `corp_name`, `corp_tel` FROM `corporation`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="customerTableAdapter" GeneratorDataComponentClassName="customerTableAdapter" Name="customer" UserDataComponentName="customerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="qridConnectionString (Settings)" DbObjectName="qrid.customer" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `cust_idx`, `cust_name`, `cust_tel`, `cust_description` FROM `customer`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="memberTableAdapter" GeneratorDataComponentClassName="memberTableAdapter" Name="member" UserDataComponentName="memberTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="qridConnectionString (Settings)" DbObjectName="qrid.member" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `mb_idx`, `corp_idx`, `mb_id`, `mb_pwd`, `mb_name`, `mb_tel`, `reg_date` FROM `member`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="reserveTableAdapter" GeneratorDataComponentClassName="reserveTableAdapter" Name="reserve" UserDataComponentName="reserveTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="qridConnectionString (Settings)" DbObjectName="qrid.reserve" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `reserve_idx`, `mb_idx`, `cust_idx`, `reserve_description`, `reg_date`, `start_date`, `end_date` FROM `reserve`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="qridDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="qridDataSet" msprop:Generator_UserDSName="qridDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="corporation" msprop:Generator_TableClassName="corporationDataTable" msprop:Generator_TableVarName="tablecorporation" msprop:Generator_TablePropName="corporation" msprop:Generator_RowDeletingName="corporationRowDeleting" msprop:Generator_RowChangingName="corporationRowChanging" msprop:Generator_RowEvHandlerName="corporationRowChangeEventHandler" msprop:Generator_RowDeletedName="corporationRowDeleted" msprop:Generator_UserTableName="corporation" msprop:Generator_RowChangedName="corporationRowChanged" msprop:Generator_RowEvArgName="corporationRowChangeEvent" msprop:Generator_RowClassName="corporationRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="customer" msprop:Generator_TableClassName="customerDataTable" msprop:Generator_TableVarName="tablecustomer" msprop:Generator_TablePropName="customer" msprop:Generator_RowDeletingName="customerRowDeleting" msprop:Generator_RowChangingName="customerRowChanging" msprop:Generator_RowEvHandlerName="customerRowChangeEventHandler" msprop:Generator_RowDeletedName="customerRowDeleted" msprop:Generator_UserTableName="customer" msprop:Generator_RowChangedName="customerRowChanged" msprop:Generator_RowEvArgName="customerRowChangeEvent" msprop:Generator_RowClassName="customerRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="member" msprop:Generator_TableClassName="memberDataTable" msprop:Generator_TableVarName="tablemember" msprop:Generator_TablePropName="member" msprop:Generator_RowDeletingName="memberRowDeleting" msprop:Generator_RowChangingName="memberRowChanging" msprop:Generator_RowEvHandlerName="memberRowChangeEventHandler" msprop:Generator_RowDeletedName="memberRowDeleted" msprop:Generator_UserTableName="member" msprop:Generator_RowChangedName="memberRowChanged" msprop:Generator_RowEvArgName="memberRowChangeEvent" msprop:Generator_RowClassName="memberRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="reserve" msprop:Generator_TableClassName="reserveDataTable" msprop:Generator_TableVarName="tablereserve" msprop:Generator_TablePropName="reserve" msprop:Generator_RowDeletingName="reserveRowDeleting" msprop:Generator_RowChangingName="reserveRowChanging" msprop:Generator_RowEvHandlerName="reserveRowChangeEventHandler" msprop:Generator_RowDeletedName="reserveRowDeleted" msprop:Generator_UserTableName="reserve" msprop:Generator_RowChangedName="reserveRowChanged" msprop:Generator_RowEvArgName="reserveRowChangeEvent" msprop:Generator_RowClassName="reserveRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
