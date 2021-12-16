@@ -44,11 +44,11 @@ namespace ReservProgram
             this.schedulerDataStorage1 = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
             this.qridDataSet1 = new ReservProgram.qridDataSet();
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
+            this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController(this.components);
             this.toolboxControl1 = new DevExpress.XtraToolbox.ToolboxControl();
             this.dateNavigator1 = new DevExpress.XtraScheduler.DateNavigator();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.toolTipController1 = new DevExpress.Utils.ToolTipController(this.components);
             this.trayMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerDataStorage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qridDataSet1)).BeginInit();
@@ -124,6 +124,9 @@ namespace ReservProgram
             // 
             // schedulerDataStorage1
             // 
+            // 
+            // 
+            // 
             this.schedulerDataStorage1.AppointmentDependencies.AutoReload = false;
             this.schedulerDataStorage1.AppointmentDependencies.DataSource = this.qridDataSet1;
             // 
@@ -156,12 +159,12 @@ namespace ReservProgram
             this.schedulerControl1.DataStorage = this.schedulerDataStorage1;
             this.schedulerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.schedulerControl1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.schedulerControl1.GroupType = DevExpress.XtraScheduler.SchedulerGroupType.Date;
             this.schedulerControl1.Location = new System.Drawing.Point(0, 0);
-            this.schedulerControl1.LookAndFeel.SkinName = "The Bezier";
+            this.schedulerControl1.LookAndFeel.SkinName = "DevExpress Style";
             this.schedulerControl1.Name = "schedulerControl1";
+            this.schedulerControl1.PaintStyleName = "Flat";
             this.schedulerControl1.Size = new System.Drawing.Size(1327, 530);
-            this.schedulerControl1.Start = new System.DateTime(2021, 12, 15, 0, 0, 0, 0);
+            this.schedulerControl1.Start = new System.DateTime(2021, 12, 16, 0, 0, 0, 0);
             this.schedulerControl1.TabIndex = 1;
             this.schedulerControl1.Text = "schedulerControl1";
             this.schedulerControl1.ToolTipController = this.toolTipController1;
@@ -193,11 +196,13 @@ namespace ReservProgram
             // 
             // dateNavigator1
             // 
+            this.dateNavigator1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.dateNavigator1.ButtonsStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.dateNavigator1.CalendarAppearance.DayCellSpecial.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.dateNavigator1.CalendarAppearance.DayCellSpecial.Options.UseFont = true;
             this.dateNavigator1.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNavigator1.CalendarView = DevExpress.XtraEditors.Repository.CalendarView.ClassicNew;
             this.dateNavigator1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateNavigator1.FirstDayOfWeek = System.DayOfWeek.Sunday;
             this.dateNavigator1.Location = new System.Drawing.Point(0, 0);
