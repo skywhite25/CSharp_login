@@ -109,11 +109,6 @@ namespace ReservProgram
         {
             return false;
         }
-        public virtual void SetMenuManager(IDXMenuManager menuManager)
-        {
-            MenuManagerUtils.SetMenuManager(Controls, menuManager);
-            this.menuManager = menuManager;
-        }
 
         protected internal virtual void SetupPredefinedConstraints()
         {
