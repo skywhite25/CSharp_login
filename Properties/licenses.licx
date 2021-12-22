@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 DevExpress.XtraScheduler.SchedulerControl, DevExpress.XtraScheduler.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
 DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+=======
+DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraScheduler.SchedulerControl, DevExpress.XtraScheduler.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+>>>>>>> 5e27e1881bc852889ea3d4a1b719c2c5403a921a
 DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a

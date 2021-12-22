@@ -289,5 +289,10 @@ C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.CustomAppointm
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.CustomAppointmentForm.ko.resources
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\de\ReservProgram.resources.dll
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ko\ReservProgram.resources.dll
+<<<<<<< HEAD
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.exe.licenses
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.csproj.AssemblyReference.cache
+=======
+C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.csproj.AssemblyReference.cache
+C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.exe.licenses
+>>>>>>> 5e27e1881bc852889ea3d4a1b719c2c5403a921a
