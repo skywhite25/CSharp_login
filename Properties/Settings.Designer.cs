@@ -43,5 +43,27 @@ namespace ReservProgram.Properties {
                 return ((string)(this["qridConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\SchedulerTest" +
+            ".mdf;Integrated Security=True;Connect Timeout=30")]
+        public string SchedulerTest {
+            get {
+                return ((string)(this["SchedulerTest"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\test.mdf;Inte" +
+            "grated Security=True;Connect Timeout=30")]
+        public string test {
+            get {
+                return ((string)(this["test"]));
+            }
+        }
     }
 }

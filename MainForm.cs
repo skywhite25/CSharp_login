@@ -15,17 +15,22 @@ namespace ReservProgram
 {
     public partial class MainForm : MetroForm
     {
-/*        String _Server = "localhost";
-        int _port = 3306;
-        string _db = "qrid_test";
-        string _id = "root";
-        string _pw = "aa135719";
-        string _connectionAddress = "";*/
+
+
+
+        /*        String _Server = "localhost";
+                int _port = 3306;
+                string _db = "qrid_test";
+                string _id = "root";
+                string _pw = "aa135719";
+                string _connectionAddress = "";*/
 
         public MainForm()
         {
-            InitializeComponent();
-            Console.WriteLine(trayIcon.Visible);
+
+        }
+
+        
 /*
             _connectionAddress = string.Format("Server={0},port={1},db={2},id={3},pw={4}", _Server, _port, _db, _id, _pw);*/
 /*            string connStr = string.Format(@"server=localhost;
@@ -46,7 +51,7 @@ namespace ReservProgram
             }*/
 
 
-        }
+        
 
         private void showToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -99,6 +104,7 @@ namespace ReservProgram
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+
             Console.WriteLine("메인폼 로드");            
         }
 
@@ -181,6 +187,7 @@ namespace ReservProgram
             }
 
         }
+
         // 컨트롤 창에서 최소화 버튼 클릭 -> 작업표시줄에는 아이콘이 남아있고 트레이 아이콘 유지
         // -> 트레이 아이콘 show 버튼 클릭 -> 컨트롤 버튼 미작동        
 

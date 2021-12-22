@@ -37,7 +37,6 @@ C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.pdb
 C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\ko-KR\ReservProgram.resources.dll
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.Reserve.ko-KR.resources
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ko-KR\ReservProgram.resources.dll
-C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\SchedulerData.mdb
 C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\MySql.Data.EntityFramework.dll
 C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\MySql.Web.dll
 C:\TH\vscommunity_workspace\ReservProgram\bin\Debug\MySql.Data.EntityFramework.xml
@@ -290,3 +289,5 @@ C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.CustomAppointm
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.CustomAppointmentForm.ko.resources
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\de\ReservProgram.resources.dll
 C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ko\ReservProgram.resources.dll
+C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.exe.licenses
+C:\TH\vscommunity_workspace\ReservProgram\obj\Debug\ReservProgram.csproj.AssemblyReference.cache

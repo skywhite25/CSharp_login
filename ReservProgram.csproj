@@ -132,11 +132,6 @@
     <Compile Include="EventForm.Designer.cs">
       <DependentUpon>EventForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="qridDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>qridDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Reserve_Calender.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,14 +158,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SchedulerDataDataSet.cs">
-      <DependentUpon>SchedulerDataDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SchedulerDataDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SchedulerDataDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="UserControlBlank.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -202,6 +189,7 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -334,28 +322,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="qridDataSet.xsc">
-      <DependentUpon>qridDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="qridDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>qridDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="qridDataSet.xss">
-      <DependentUpon>qridDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SchedulerDataDataSet.xsc">
-      <DependentUpon>SchedulerDataDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SchedulerDataDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SchedulerDataDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SchedulerDataDataSet.xss">
-      <DependentUpon>SchedulerDataDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -381,9 +347,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="qrid_icon.ico" />
-    <Content Include="SchedulerData.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

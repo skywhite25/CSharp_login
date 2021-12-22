@@ -30,7 +30,7 @@ namespace ReservProgram
 
             Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("ko");
 
-            Application.Run(new LoginForm());
+            Application.Run(new MainForm());
 
 
         }
